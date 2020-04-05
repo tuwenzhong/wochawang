@@ -1,0 +1,45 @@
+.login{
+    background: #eeeeee;
+}
+
+.login_phone{
+    width: 100%;
+    height: 50px;
+    background: white;
+    line-height: 50px;
+    text-indent: 10px;
+    font-size: 16px;
+    color: #b3b3b3;
+    margin: 10px 0;
+}
+
+.myform{
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 10px;
+    background: white;
+    &>p{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        color: #444444;
+        input{
+            border: 0;
+            height: 20px;
+            text-indent: 10px;
+            font-size: 14px;
+        }
+    }
+    .getCode{
+        float: right;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #a2a2a2;
+        color: white;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}

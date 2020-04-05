@@ -1,0 +1,178 @@
+.wap_carousel{
+    width: 100%;
+    position: relative;
+    .carouselImg{
+        width: 100%;
+    }
+}
+
+.am-navbar-light{
+    width: 100%;
+    background:rgba(0,0,0,0);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+.am-navbar-right,.am-navbar-left{
+    flex: 0;
+}
+.am-navbar-title{
+    flex: 1;
+    justify-content:start;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    &>i{
+        margin-right: 5px;
+    }
+    &>p{
+        height: 30px;
+        flex: 1;
+        background: rgba(255,255,255,0.9);
+        display: flex;
+        align-items: center;
+        color:#bbbbbb;
+        border-radius: 5px;
+        font-size: 15px;
+        &>i{
+            font-size: 20px;
+        }
+    }
+}
+
+
+.wap_nav{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    &>li{
+        width: 20%;
+        height: 75px;
+        text-align: center;
+        padding: 11px 0 7px;
+        &>span{
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background: #fb6e52 ;
+            margin: 0 auto 8px;
+            &>i{
+                font-size: 20px;
+                color: white;
+            }
+        }
+        &>P{
+            color:#555555;
+        }
+    }
+}
+
+.wap_notify{
+    width: 100%;
+    display: flex;
+    margin-bottom: 4px;
+    &>img{
+        width: 54px;
+        height: 54px;
+        margin-left: 2px;
+    }
+    .notice-carousel{
+        flex: 1;
+        width:0 ;
+        height: 54px;
+        font-size: 15px;
+        overflow: hidden;
+        .article_title{
+            width: 100%;
+            height: 25px;
+            line-height: 25px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+        }
+    }
+}
+
+
+
+// .spike{
+//     width: 100%;
+//     .tit-bar{
+//         margin: 11px 0;
+//         &>p{
+//             margin-left: 7px;
+//             box-sizing: border-box;
+//             padding-left: 7px;
+//             border-left:2px solid #ED5564;
+//             font-size: 16px;
+//             &>span{
+//                 margin-left: 5px;
+//                 font-size: 12px;
+//             }
+//         }
+//     }
+// }
+
+.nctouch-home-block{
+    width: 100%;
+    &>img{
+        width: 100%;
+    }
+    &>ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &>li{
+            width: 50%;
+            &>img{
+                width:100%
+            }
+        }
+    }
+}
+
+.wap_title{
+    width: 100%;
+    &>img{
+        width: 100%;
+    }
+    &>ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &>li{
+            width: 47%;
+            margin:5px 0 ;
+            &>img{
+                width: 100%;
+            }
+            .goods_info{
+                width: 100%;
+                box-sizing: border-box;
+                padding: 5px;
+                overflow: hidden;
+                background: white;
+                .goods_name{
+                    font-size: 14px;
+                    line-height: 20px;
+                    height: 40px;
+                    overflow: hidden;
+                }
+                .goods_promotion_price{
+                    margin-top:8px ;
+                    padding-top: 8px;
+                    font-size: 14px;
+                    color: #d84453;
+                    font-weight: 600;
+                    border-top:1px solid #eee ;
+                }
+            }
+        }
+    }
+}

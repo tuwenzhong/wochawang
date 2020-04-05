@@ -1,0 +1,99 @@
+@keyframes bg-color{
+0%{background-color:#e74c3c;}
+20% {background-color:#f1c40f;}
+40% {background-color:#1abc9c;}
+60%{background-color:#3498db;}
+80%{background-color:#9b59b6;}
+100%{background-color:#e74c3c;}
+}
+@keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -3000px, 0);
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 25px, 0);
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.user{
+    width: 100%;
+    height: 180px;
+    background: #ED5564 url("http://www.chawo.com/wap/images/member_top_bg.png");
+    background-size: cover;
+    -webkit-animation:bg-color 15s infinite;
+    animation: bg-color 15s infinite;
+    position: relative;
+    .user_info{
+        position: absolute;
+        width:260px ;
+        top: 10px;
+        left: 50%;
+        margin-left: -130px;
+        text-align: center;
+        -webkit-animation:bounceInDown 1s ;
+        animation: bounceInDown 1s ;
+        &>span{
+            display: block;
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            background: white;
+            margin: 0 auto 10px;
+            &>img{
+                width: 60px;
+            }
+        }
+        &>p{
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+    .member-collect{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.2);
+        display: flex;
+        &>li{
+            padding: 11px 0 ;
+            width: 33.3%;
+            color: white;
+            text-align: center;
+            .user_num{
+                font-size: 20px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+
